@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form validation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form-div">
+      <form class="form" novalidate>
+        <label for="ZIP">ZIP : </label>
+        <input type="text" id="ZIP" />
+
+        <label for="country">Country : </label>
+        <select id="country">
+          <option value="ch">Switzerland</option>
+          <option value="fr">France</option>
+          <option value="de">Germany</option>
+          <option value="nl">The Netherlands</option>
+        </select>
+
+        <label for="email">* your email address :</label>
+        <input type="email" id="email" required />
+
+        <label for="password">* enter your password :</label>
+        <input type="password" id="password" required />
+
+        <label for="password-conf">* enter your password again :</label>
+        <input type="password" id="password-conf" required />
+
+        <button id="btn" type="button">submit</button>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

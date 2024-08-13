@@ -1,0 +1,29 @@
+body {
+  background-color: blanchedalmond;
+}
+
+.form-div {
+  border: 2px solid grey;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 50px;
+  height: 80vh;
+}
+
+.form > * {
+  display: flex;
+}
+
+.form > label,
+button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input:valid {
+  border: 1px solid rgb(37, 173, 37);
+}
